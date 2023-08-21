@@ -1,0 +1,69 @@
+body{
+    color:  rgb(16, 152, 170);
+}
+
+.contact{
+    display: flex;
+    height: 90vh;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact .left{
+    margin-left: 100px;
+}
+
+.contact form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: whitesmoke;
+    padding: 60px;
+    border-radius: 8px;
+}
+
+.contact form input{
+    padding-left: 15px;
+    padding: 10px;
+    border: none;
+}
+
+.contact form textarea{
+    padding-left: 20px;
+    padding-top: 10px;
+    border: none;
+}
+
+.contact .right{
+    width: 40%;
+}
+
+.contact .box{
+    background-color: rgb(245, 245, 245);
+    margin-right: 50px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 7px;
+}
+
+.box a{
+    color: rgb(16, 152, 170);
+}
+
+.button{
+    width: 100px;
+    padding: 15px;
+    background-color: rgb(16, 152, 170);
+    color: white;
+}
+
+html{
+    background-image: url("./back3.webp");
+    background-repeat: no-repeat;
+    background-size: 100%;
+   }
+  

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./stylehor.css">
+</head>
+<body>
+
+
+<section class="decor" id="super">
+ 
+  <a class="hlinks" href="#super"><h2 class="sectionHeading">Our Super</h2></a>
+  <img loading="lazy" src="https://www.indiagatefoods.com/wp-content/themes/india-gate/static/images/heading-element-indiagate.png" class="design">
+
+  
+
+  
+  <div class="gallery-wrap"> 
+    <img src="./pics/backbtn.png" id="backBtn">
+    <div class="gallery">
+      <div>
+        <span><img src="./pics/rice1.1.jpeg" alt=""></span>
+        <span><img src="./pics/rice2.2.jpeg" alt=""></span>
+        <span><img src="./pics/rice3.1.jpeg" alt=""></span>
+      </div>
+      <div>
+        <span><img src="./pics/rice4.1.jpeg" alt=""></span>
+        <span><img src="./pics/rice3.jpeg" alt=""></span>
+        <span><img src="./pics/srice1.jpeg" alt=""></span>
+      </div>
+    </div>
+    <img src="./pics/nextbtn.png" id="nextBtn">
+  </div>
+    <div class="text">
+      <p>Lorem, ipsum dolo Doloremque velit ipsa officiis enim, necessitatibus libero sunt tempora perferendis amet incidunt atque! Voluptas nam quas quam amet atque expedita omnis harum, quis, inventore autem modi placeat aut aliquam laudantium necessitatibus officiis officia dignissimos eaque cum numquam pariatur. Obcaecati nulla voluptas nisi? ipsum dolor sit amet consectetur adipisicing elit. Eveniet libero, suscipit rem doloremque soluta ex illum sequi iste molestiae animi accusamus nihil dolorem dolores pariatur officia tenetur perferendis tempora blanditiis eum unde? Fugiat atque itaque minus voluptatem nesciunt consequatur provident id aliquam saepe perspiciatis beatae, dicta fugit? Vel delectus adipisci facere laboriosam. Molestias officiis delectus corrupti veritatis, assumenda quam provident soluta minima quas ullam sunt qui quo eos! Quam ipsam delectus quaerat doloribus, sequi impedit eveniet? Provident at asperiores in maiores omnis corporis perferendis cum cumque corrupti. Nulla architecto magni, labore possimus reprehenderit optio sed soluta assumenda cumque. Natus, cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident explicabo placeat ad sequi dignissimos dicta, enim ea natus culpa quasi corrupti illum minima voluptas maxime. Minus, est eos. Qui quia quaerat animi! Facere iusto accusantium ex cumque vero, distinctio pariatur odit tempore deserunt ipsam. Repudiandae beatae laboriosam voluptate officiis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nulla reiciendis, similique itaque autem voluptates error neque incidunt iure deleniti quis ex maxime laudantium voluptatum explicabo quidem vitae temporibus delectus?</p>
+    </div>
+</section>
+
+<br>
+<section class="decor" id="basmathi">
+
+<a class="hlinks" href="#basmathi"><h2 class="sectionHeading">Our Basmithi</h2></a>
+<img loading="lazy" src="https://www.indiagatefoods.com/wp-content/themes/india-gate/static/images/heading-element-indiagate.png" class="design">
+
+  <div class="gallery-wrap"> 
+    <img src="./pics/backbtn.png" id="backBtn">
+    <div class="gallery">
+      <div>
+        <span><img src="./pics/brice1.jpeg" alt=""></span>
+        <span><img src="./pics/brice2.jpeg" alt=""></span>
+        <span><img src="./pics/brice4.jpeg" alt=""></span>
+      </div>
+      <div>
+        <span><img src="./pics/brice5.jpeg" alt=""></span>
+        <span><img src="./pics/srice1.jpeg" alt=""></span>
+        <span><img src="./pics/brice6.jpeg" alt=""></span>
+      </div>
+    </div>
+    <img src="./pics/nextbtn.png" id="nextBtn">
+  </div>
+  <div class="text">
+    <p>Lorem, ipsum dolo Doloremque velit ipsa officiis enim, necessitatibus libero sunt tempora perferendis amet incidunt atque! Voluptas nam quas quam amet atque expedita omnis harum, quis, inventore autem modi placeat aut aliquam laudantium necessitatibus officiis officia dignissimos eaque cum numquam pariatur. Obcaecati nulla voluptas nisi? ipsum dolor sit amet consectetur adipisicing elit. Eveniet libero, suscipit rem doloremque soluta ex illum sequi iste molestiae animi accusamus nihil dolorem dolores pariatur officia tenetur perferendis tempora blanditiis eum unde? Fugiat atque itaque minus voluptatem nesciunt consequatur provident id aliquam saepe perspiciatis beatae, dicta fugit? Vel delectus adipisci facere laboriosam. Molestias officiis delectus corrupti veritatis, assumenda quam provident soluta minima quas ullam sunt qui quo eos! Quam ipsam delectus quaerat doloribus, sequi impedit eveniet? Provident at asperiores in maiores omnis corporis perferendis cum cumque corrupti. Nulla architecto magni, labore possimus reprehenderit optio sed soluta assumenda cumque. Natus, cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum provident explicabo placeat ad sequi dignissimos dicta, enim ea natus culpa quasi corrupti illum minima voluptas maxime. Minus, est eos. Qui quia quaerat animi! Facere iusto accusantium ex cumque vero, distinctio pariatur odit tempore deserunt ipsam. Repudiandae beatae laboriosam voluptate officiis! Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt nulla reiciendis, similique itaque autem voluptates error neque incidunt iure deleniti quis ex maxime laudantium voluptatum explicabo quidem vitae temporibus delectus?</p>
+  </div>
+</section>
+
+  
+  <script>
+    let scrollContainer = document.querySelector(".gallery");
+    let backBtn = document.getElementById("backBtn");
+    let nextBtn = document.getElementById("nextBtn");
+
+    scrollContainer.addEventListener("wheel", (eve) => {
+      evt.preventDefault();
+      scrollContainer.scrollLeft += evt.deltaY;
+    });
+
+    nextBtn.addEventListener("click",()=>{
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft += 900;
+    })
+
+    backBtn.addEventListener("click",()=>{
+      scrollContainer.style.scrollBehavior = "smooth";
+      scrollContainer.scrollLeft -= 900;
+    })
+
+  </script>
+ 
+</body>
+</html>
+
+
+
+
+
